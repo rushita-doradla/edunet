@@ -8,7 +8,7 @@ window.onload = function () {
       const formData = JSON.parse(storedData);
        
       // Update elements in index.html
-    document.getElementById('name-hed').setAttribute('src',`https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=600&size=50&duration=2000&pause=200&color=F7F7F7&vCenter=true&repeat=false&random=false&width=580&lines=I'm+${formData.f_name}+${formData.l_name}%F0%9F%91%8B`);
+    document.getElementById('name-hed').setAttribute('src',`https://readme-typing-svg.demolab.com?font=Montserrat&weight=600&size=50&duration=2000&pause=200&color=F7F7F7&vCenter=true&repeat=false&random=false&width=580&lines=I'm+${formData.f_name}+${formData.l_name}%F0%9F%91%8B`);
     document.getElementById("about-desc").innerText = formData.about
     document.getElementById("p1title").innerText = formData.p1title
     document.getElementById("p1desc").innerText = formData.p1desc
