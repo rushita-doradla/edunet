@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            color: white;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-form{
+            padding: 20px 20px;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            padding: 6px;
+            font-size: 18px;
+            outline: none;
+            border: 1.5px solid white;
+           background-color: black;
+           color: white;
+            margin: 5px;
+            height: 25px;
+            width: 500px;
+            border-radius: 7px;
+        }
+        ::placeholder {
+            color: white;
+            opacity: 0.75; /* Firefox */
+          }
+          
+        textarea{
+            border-radius: 7px;
+            color: white;
+            background-color: black;
+            margin: 5px;
+            height: 55px;
+            width: 500px;
+            font-size: 17px;
+        }
+        h4{
+            
+            font-size: 20px;
+            margin-bottom: 2px;
+        }
+        h2{
+            margin-bottom: 2px;
+            text-align: center;
+            font-size: 30px;
+        }
+        h1{
+            font-size: 40px;
+        }
+        hr{
+           width: 400px;
+            margin-bottom: 30px;
+        }
+        .submit{
+            background-color: green;
+            font-weight: 600;
+            height: 50px;
+            width: 100px;
+            border: 2px solid white;
+          
+        }
+    </style>
+</head>
+<body>
+    <h1>Make Your Own Portfolio Just By Filling Details</h1>
+    <div class="main-form">
+
+        <h2>Details</h2>
+        <form action="home.html" method="post">
+            <hr>
+            <input type="text" placeholder="Firstname" id="firstname"><br>
+            <input type="text" placeholder="Lastid" id="lastname"><br>
+            <textarea id="about" rows="4" cols="20" placeholder="About You..."> About You...</textarea><br>
+            <h2>Projects</h2>
+            <hr>
+            <h4>Project-1</h4>
+            <input type="text" placeholder="Title" id="p1title"><br>
+        <input type="text" placeholder="Description" id="p1desc"><br>
+        <input type="text" placeholder="Github-Link" id="p1git"><br>
+        <h4>Project-2</h4>
+        <input type="text" placeholder="Title" id="p2title"><br>
+        <input type="text" placeholder="Description" id="p2desc"><br>
+        <input type="text" placeholder="Github-Link" id="p2git"><br>
+        <h4>Project-3</h4>
+        <input type="text" placeholder="Title" id="p3title"><br>
+        <input type="text" placeholder="Description" id="p3desc"><br>
+        <input type="text" placeholder="Github-Link" id="p3git"><br>
+        <h4>Project-4</h4>
+        <input type="text" placeholder="Title" id="p4title"><br>
+        <input type="text" placeholder="Description" id="p4desc"><br>
+        <input type="text" placeholder="Github-Link" id="p4git"><br>
+        
+        <h2>Skills</h2>
+        <hr>
+        <input type="text" placeholder="Skills(comma seperated)" id="skills"><br>
+
+        <input type="submit" class="submit">
+        
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
